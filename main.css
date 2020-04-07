@@ -1,0 +1,241 @@
+body {
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+}
+
+h1, h3 {
+  margin: 0;
+}
+
+header {
+  width: 100%;
+  background-color: #CC0033;
+  padding: 13px 0;
+  display: flex;
+  flex-direction: row;
+}
+
+#search {
+  padding: 10px;
+  background-color: #A00028;
+  width: 540px;
+  border: none;
+  min-height: 30px;
+}
+
+.header-title {
+  background-color: #303030;
+  height: 50px;
+  width: 180px;
+  margin-right: 18%;
+  margin-left: 10px;
+}
+
+nav {
+  width: 100%;
+  background-color: #A00028;
+  height: 45px;
+}
+
+.banner-container {
+  height: 394px;
+  background: linear-gradient(to right, rgba(14, 14, 14, 0.85) 5%, rgba(255, 255, 255, 0)) 95%,
+  linear-gradient(to left, rgb(0, 0, 0) 5%, rgba(255, 255, 255, 0)),
+  url(./images/B&W_bg.jpg);
+  background-position: 74% 81%;
+  background-size: 100% 184%;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: row;
+  padding: 1%;
+}
+
+.description {
+  flex: 1;
+  color: #fff;
+  padding: 3% 0;
+}
+
+.image-containeer {
+  background: url('./images/PEAK_PNG.png') no-repeat no-repeat;
+  flex: 1;
+  background-position: 100% 20%;
+  background-size: 435px 280px;
+}
+
+.content-container {
+  padding: 0 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.colors {
+  width: 434px;
+  height: 209px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+  box-shadow: 3px 7px 13px 1px #ccc;
+}
+
+.colors > div {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-color: #fff;
+}
+
+.colors:first-child > div {
+  background-color: #35D3B4;
+}
+
+.colors:nth-child(2) > div {
+  background-color: #1B2191;
+}
+
+.colors:last-child > div {
+  background-color: #D822EE;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.left, .right {
+  padding: 1.5em 1em;
+}
+
+.footer-title {
+  font-size: 24px;
+  padding-bottom: .2em;
+}
+
+.footer-link {
+  font-size: 14px;
+  padding-bottom: .1em;
+}
+
+label {
+  position: relative;
+}
+
+label:before {
+  content: "";
+  position: absolute;
+  right: 10px;
+  top: 9px;
+  bottom: 0;
+  width: 29px;
+  height: 29px;
+  background-image: url('./icons/search_icon.svg');
+  background-repeat: no-repeat;
+}
+
+input {
+  padding: 10px 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .content-container {
+    margin-top: -6em;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .banner-container {
+    background: linear-gradient(to bottom, #333, rgba(51, 51, 51, 0.5) 50%, rgba(2, 2, 2, 0.4) 82%, #fffcfc 25%),
+      url(./images/B&W_bg.jpg) no-repeat no-repeat;
+  }
+  
+  .image-containeer {
+    background-position: 50% 105%;
+    background-size: 395px 280px;
+  }
+  
+  .content-container {
+    padding: 0 4%;
+  }
+  
+  .colors {
+    margin-bottom: 5em;
+  }
+  
+  .header-title {
+    margin-right: 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .banner-container {
+    background: linear-gradient(to bottom, #333, rgba(51, 51, 51, 0.5) 50%, rgba(2, 2, 2, 0.4) 82%, #fffcfc 25%),
+    url(./images/B&W_bg.jpg) no-repeat no-repeat;
+    flex-direction: column;
+    background-position: 100% 40%;
+    background-size: 190% 405px;
+    background-repeat: no-repeat;
+  }
+  
+  .header-title {
+    margin-right: 15px;
+    width: 54px;
+  }
+  
+  .description {
+    flex: none;
+    padding: 3% 10%;
+  }
+  .image-containeer {
+    background-position: 50% 40%;
+    background-size: 350px 185px;
+  }
+  
+  .content-container {
+    margin-top: 0;
+  }
+  .colors {
+    width: 100%;
+    height: 30px;
+    margin-bottom: 10px;
+  }
+  
+  footer {
+    flex-direction: column;
+  }
+  
+  .left, .right {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  
+  #search {
+    width: 270px;
+  }
+  
+  /* label {
+    position: relative;
+  }
+
+  label:before {
+    content: "";
+    position: absolute;
+    right: 10px;
+    top: 9px;
+    bottom: 0;
+    width: 29px;
+    height: 29px;
+    background-image: url('./icons/search_icon.svg');
+    background-repeat: no-repeat;
+  }
+
+  input {
+    padding: 10px 30px;
+  } */
+}
